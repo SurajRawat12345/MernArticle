@@ -11,7 +11,7 @@ const UserRoutes = require('./routes/user');
 mongoose.set('strictQuery', false); 
 
 // Mongo DB Connection ..........
-const dburi = 'mongodb://localhost:27017/Articles';
+const dburi = process.env.URI;
 mongoose.connect(dburi , {useNewUrlParser : true , useUnifiedTopology : true})
 .then((result) => {
     console.log("Connected To DB");
