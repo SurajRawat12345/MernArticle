@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const app = express();
 const Route = require('./routes/route');
-const UserRoutes = require('./routes/user');
 
 // for deprication warning ........
 mongoose.set('strictQuery', false); 
@@ -27,5 +26,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 
 // Routes
-app.use('/user' , UserRoutes);
 app.use(Route);
