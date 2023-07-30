@@ -27,7 +27,7 @@ const ReadArticle = (req,res) => {
         //console.log("Received all data");
     })
     .catch((err) => {
-        console.log(err);
+        res.json({message : err});
     })
 } 
 
@@ -61,7 +61,7 @@ const halfUpdate = (req,res) => {
             //console.log("Partially Updated Successfully");
         })
         .catch((err) => {
-            console.log(err);
+            res.json({message : err});
         })
     }
     else{
@@ -80,7 +80,7 @@ const updateArticle = (req,res) => {
             //console.log("Fully Updated Successfully");
         })
         .catch((err) => {
-            console.log(err);
+            res.json({message : err});
         })
     }
     else{
@@ -98,7 +98,7 @@ const deleteArticle = (req,res) => {
             //console.log("Article deleted");
         })
         .catch((err) => {
-            console.log(err);
+            res.json({message : err});
         })
     }
 }
