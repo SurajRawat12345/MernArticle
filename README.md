@@ -4,7 +4,7 @@
 
 Article.co is a responsive MERN Project with CRUD operations on Articles.
 
-Live Link : https://deft-brioche-abd37a.netlify.app/
+Live Link : https://articleco.netlify.app
 
 # DEMO :
 
